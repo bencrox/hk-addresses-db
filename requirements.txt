@@ -1,0 +1,10 @@
+requests
+geopandas
+fiona
+shapely
+pyproj
+rtree
+rapidfuzz
+pandas
+geopy
+PyYAML

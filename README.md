@@ -21,6 +21,32 @@ Contents
   - `suggest_entities.py` — scan ALS addresses to propose missing entities and generate issue text (use `bin/suggest_entities.py`)
 - `data/` — downloaded datasets (ALS zip)
 
+Prerequisite
+0. GDAL C++ library is required for the fiona module 
+
+ - For macOS
+
+```
+brew install gdal
+export GDAL_CONFIG=$(brew --prefix gdal)/bin/gdal-config
+```
+
+ - For Linux
+
+```
+sudo apt-get install libgdal-dev gdal-bin
+export GDAL_VERSION=$(gdal-config --version)
+```
+
+ - For Windows
+   - Checkout GDAL binaries installer from GISInternals.com 
+
+ - By Conda 
+
+```
+conda install -c conda-forge geopandas fiona
+```
+
 Installation & usage (quickstart)
 1. Create a Python virtual env and install requirements:
 
